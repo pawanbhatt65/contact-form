@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact-box {
+  position: relative;
+  height: 100vh;
+}
+.contact-box::before {
+  position: absolute;
+  content: "";
+  background: url(https://azim.commonsupport.com/Bytecoin/images/home/shap1.png);
+  width: 100%;
+  height: 530px;
+  left: 0px;
+  bottom: 0px;
+}
+.contact-box::after {
+  position: absolute;
+  content: "";
+  background: url(https://azim.commonsupport.com/Bytecoin/images/home/shap1.png);
+  width: 100%;
+  height: 530px;
+  right: 0px;
+  bottom: 0px;
+}
+.contact-box > .container {
+  height: 100%;
+}
+.contact-box > .container > .row {
+  height: 100%;
+}
+.contact-form {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form-group {
+  position: relative;
+}
+.form-name {
+  position: relative;
+  width: 100%;
+  height: 52px;
+  background: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 3px;
+  padding: 10px 50px 10px 20px;
+  margin-bottom: 30px;
+  z-index: 1;
+  transition: all 500ms ease;
+}
+.form-name:is(:focus, :active) {
+  outline: none;
+  box-shadow: none;
+  border-color: #ffc139;
+  background-color: #f2f2f2;
+}
+.form-group > i {
+  position: absolute;
+  top: 12px;
+  right: 25px;
+  opacity: 0.6;
+  z-index: 2;
+}
+.form-group > textarea {
+  position: relative;
+  width: 100%;
+  background: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 3px;
+  padding: 10px 50px 10px 20px;
+  margin-bottom: 30px;
+  z-index: 1;
+  transition: all 500ms ease;
+  height: 150px;
+  resize: none;
+  /* margin-bottom: 32px; */
+}
+.form-group > textarea:focus {
+  outline: none;
+  border-color: #ffc139;
+  background-color: #f2f2f2;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.btn-submit {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  padding: 11px 30px 11px 31px;
+  color: #242424;
+  border-radius: 2px;
+  position: relative;
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 1;
+  background: #ffc139;
+  border: 2px solid #ffc139;
+}
+
+/* show error */
+.error-box {
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #00000070;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error-box-container {
+  background-color: #ffc139;
+  width: 500px;
+  height: 222px;
+  border-radius: 10px;
+  border: none;
+  margin: auto;
+  padding: 30px;
+}
+.error-static-text {
+  font-size: 30px;
+  color: #242424;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.error-text {
+  font-size: 18px;
+}
+.closeBtn {
+  background-color: #242424;
+  color: #fff;
+  width: 125px;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  height: 36px;
+  border: 1px solid #242424;
+  border-radius: 18px;
+  line-height: 36px;
+}
+.text-limit{
+  position: absolute;
+  right: 15px;
+  bottom: 44px;
+  z-index: 1;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #242424;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
